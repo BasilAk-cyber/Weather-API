@@ -7,7 +7,8 @@ const Date = document.querySelector(".date");
 const windSpeed = document.querySelector(".wind-speed");
 const humility = document.querySelector(".humility");
 
-const API_KEY = window.CONFIG?.API_KEY;
+const API_KEY = import.meta.env.VITE_API_KEY;
+console.log("Key:", API_KEY);
 
 
 async function getWeatherInfo() {
