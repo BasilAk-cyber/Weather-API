@@ -7,8 +7,6 @@ const Date = document.querySelector(".date");
 const windSpeed = document.querySelector(".wind-speed");
 const humility = document.querySelector(".humility");
 
-console.log("API Key:", API_KEY);
-
 
 async function getWeatherInfo() {
 
@@ -27,7 +25,7 @@ async function getWeatherInfo() {
 
     try {
 
-        const response = await fetch(`http://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${query}&aqi=no` );
+        const response = await fetch(`http://api.weatherapi.com/v1/current.json?key=19b26a4b32ae49e299f221349252711&q=${query}&aqi=no` );
 
         if (!response.ok) {
             const errorData = await response.json();
