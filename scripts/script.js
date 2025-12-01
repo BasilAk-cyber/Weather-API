@@ -70,7 +70,7 @@ async function getUserWeatherInfo() {
         async (position) => {
             const q = `${position.coords.latitude},${position.coords.longitude}`;
 
-            const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${q}`);
+            const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=19b26a4b32ae49e299f221349252711&q=${q}`);
             
             const data = await response.json();
 
